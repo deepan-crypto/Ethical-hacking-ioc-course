@@ -89,7 +89,7 @@ export default function IOCsView({ iocs, onUpdateStatus }) {
             </div>
 
             {/* Evidence & Scope Details */}
-            <div style={{ background: "rgba(0,0,0,0.3)", borderRadius: "6px", padding: "12px", marginTop: "12px", fontSize: "12.5px" }}>
+            <div style={{ background: "#080808", border: "1px solid #1c1c1c", borderRadius: "6px", padding: "12px", marginTop: "12px", fontSize: "12.5px" }}>
               <div style={{ marginBottom: "6px" }}>
                 <strong style={{ color: "var(--text-secondary)" }}>Target Account(s):</strong>{' '}
                 <span style={{ color: "#fff" }}>{ioc.username || "System-wide"}</span>
@@ -106,7 +106,7 @@ export default function IOCsView({ iocs, onUpdateStatus }) {
             </div>
 
             {/* Actions Footer */}
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px", paddingTop: "10px", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "12px", paddingTop: "10px", borderTop: "1px solid #1a1a1a" }}>
               <span style={{ fontSize: "11px", color: "var(--text-muted)" }}>
                 Detected: {ioc.timestamp}
               </span>
@@ -151,7 +151,7 @@ export default function IOCsView({ iocs, onUpdateStatus }) {
                 <h5 style={{ fontSize: "12px", color: "var(--text-secondary)", textTransform: "uppercase", marginBottom: "6px" }}>
                   Evidence Artifact:
                 </h5>
-                <pre style={{ background: "rgba(0,0,0,0.4)", padding: "10px", borderRadius: "6px", fontSize: "11.5px", color: "#cbd5e1", whiteSpace: "pre-wrap" }}>
+                <pre style={{ background: "#050505", border: "1px solid #222222", padding: "10px", borderRadius: "6px", fontSize: "11.5px", color: "#cbd5e1", whiteSpace: "pre-wrap" }}>
                   {selectedPlaybook.evidence}
                 </pre>
               </div>
@@ -160,7 +160,7 @@ export default function IOCsView({ iocs, onUpdateStatus }) {
                 <h5 style={{ fontSize: "12px", color: "var(--accent-cyan)", textTransform: "uppercase", marginBottom: "6px" }}>
                   Recommended Defensive Actions & Containment Steps:
                 </h5>
-                <pre style={{ background: "rgba(0, 229, 255, 0.05)", border: "1px solid rgba(0, 229, 255, 0.2)", padding: "14px", borderRadius: "6px", fontSize: "12.5px", color: "#f1f5f9", lineHeight: "1.6", whiteSpace: "pre-wrap", fontFamily: "var(--font-mono)" }}>
+                <pre style={{ background: "#050505", border: "1px solid #2a2a2a", padding: "14px", borderRadius: "6px", fontSize: "12.5px", color: "#f1f5f9", lineHeight: "1.6", whiteSpace: "pre-wrap", fontFamily: "var(--font-mono)" }}>
                   {selectedPlaybook.defensive_action}
                 </pre>
               </div>

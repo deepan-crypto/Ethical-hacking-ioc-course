@@ -100,8 +100,8 @@ export default function DashboardView({ data, mitreData, onNavigate, onTriggerAn
               <div 
                 key={tech.technique_id}
                 style={{
-                  background: tech.is_active ? "rgba(239, 68, 68, 0.08)" : "rgba(255, 255, 255, 0.02)",
-                  border: tech.is_active ? "1px solid rgba(239, 68, 68, 0.3)" : "1px solid var(--border-subtle)",
+                  background: tech.is_active ? "rgba(239, 68, 68, 0.08)" : "#080808",
+                  border: tech.is_active ? "1px solid rgba(239, 68, 68, 0.35)" : "1px solid #1f1f1f",
                   borderRadius: "6px",
                   padding: "12px 16px",
                   display: "flex",
