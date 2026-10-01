@@ -96,7 +96,7 @@ def test_ioc_and_analysis_result_crud(db_session):
         mitre_tactic="Lateral Movement",
         username="administrator",
         machine="LAB-DC-01",
-        timestamp=datetime.utcnow(),
+        timestamp=datetime.now(),
         description="Password hash reused across privileged accounts",
         evidence="Hash fingerprint shared between administrator and backup_admin",
         defensive_action="Force immediate credential rotation and enforce MFA",

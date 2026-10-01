@@ -47,7 +47,7 @@ class IOCRecord(Base):
 
     username = Column(String(100), index=True, nullable=True)
     machine = Column(String(100), nullable=True)
-    timestamp = Column(DateTime, default=datetime.utcnow, nullable=False)
+    timestamp = Column(DateTime, default=datetime.now, nullable=False)
 
     description = Column(Text, nullable=False)
     evidence = Column(Text, nullable=False)
@@ -77,7 +77,7 @@ class AnalysisResult(Base):
     __tablename__ = "analysis_results"
 
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    scan_timestamp = Column(DateTime, default=datetime.utcnow, nullable=False)
+    scan_timestamp = Column(DateTime, default=datetime.now, nullable=False)
     total_hashes = Column(Integer, default=0)
     unique_hashes = Column(Integer, default=0)
     duplicate_hashes = Column(Integer, default=0)

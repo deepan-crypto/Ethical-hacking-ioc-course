@@ -39,7 +39,7 @@ class HashRecord(Base):
     hash_fingerprint = Column(String(64), index=True, nullable=False)  # SHA-256 of hash_value
     machine = Column(String(100), index=True, nullable=False)
     source = Column(String(100), default="LAB_IMPORT", nullable=False)
-    timestamp = Column(DateTime, default=datetime.utcnow, nullable=False)
+    timestamp = Column(DateTime, default=datetime.now, nullable=False)
 
     # Risk & Behavioral Properties calculated by HashAnalyzer / RiskEngine
     is_reused = Column(Boolean, default=False, index=True)
